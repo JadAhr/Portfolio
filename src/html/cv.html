@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="overflow-y-scroll no-scrollbar" lang="en">
+<html id="bg" class="overflow-y-scroll no-scrollbar" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,7 +89,12 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+
+
+   
     AOS.init();
     function changelang() {
         var botElement = document.getElementById("bot");
@@ -107,5 +112,15 @@
         }
     }
     changelang();
+
+
+    VANTA.WAVES({
+  el: '#bg',
+  color: 0x111827,
+  waveHeight: 20,
+  shininess: 50,
+  waveSpeed: 0.1,
+  zoom: 0.75
+})
   </script>
 </html>
